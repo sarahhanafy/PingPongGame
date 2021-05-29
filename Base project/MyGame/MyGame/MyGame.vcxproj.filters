@@ -16,15 +16,14 @@
     <ClCompile Include="MyGame.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Ship.cpp" />
-    <ClCompile Include="Laser.cpp" />
     <ClCompile Include="Meteor.cpp" />
     <ClCompile Include="MeteorSpawner.cpp" />
-    <ClCompile Include="Explosion.cpp" />
     <ClCompile Include="Score.cpp" />
     <ClCompile Include="GameOverMessage.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="Lives.cpp" />
     <ClCompile Include="Background.cpp" />
+    <ClCompile Include="Ball.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\AnimatedSprite.h">
@@ -44,15 +43,14 @@
     </ClInclude>
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Ship.h" />
-    <ClInclude Include="Laser.h" />
     <ClInclude Include="Meteor.h" />
     <ClInclude Include="MeteorSpawner.h" />
-    <ClInclude Include="Explosion.h" />
     <ClInclude Include="Score.h" />
     <ClInclude Include="GameOverMessage.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="Lives.h" />
     <ClInclude Include="Background.h" />
+    <ClInclude Include="Ball.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Engine">

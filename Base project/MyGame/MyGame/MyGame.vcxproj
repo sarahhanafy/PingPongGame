@@ -87,7 +87,6 @@
     <ClCompile Include="Engine\Game.cpp" />
     <ClCompile Include="Engine\GameObject.cpp" />
     <ClCompile Include="Engine\Scene.cpp" />
-    <ClCompile Include="Explosion.cpp" />
     <ClCompile Include="GameOverMessage.cpp" />
     <ClCompile Include="GameOverScene.cpp" />
     <ClCompile Include="GameScene.cpp" />
@@ -106,7 +105,6 @@
     <ClInclude Include="Engine\GameEngine.h" />
     <ClInclude Include="Engine\GameObject.h" />
     <ClInclude Include="Engine\Scene.h" />
-    <ClInclude Include="Explosion.h" />
     <ClInclude Include="GameOverMessage.h" />
     <ClInclude Include="GameOverScene.h" />
     <ClInclude Include="GameScene.h" />

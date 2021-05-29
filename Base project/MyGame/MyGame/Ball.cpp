@@ -1,4 +1,5 @@
 #include "Ball.h"
+#include "MeteorSpawner.h"
 
 const float SPEED = 1.2f;
 
@@ -15,9 +16,18 @@ void Ball::draw()
 void Ball::update(sf::Time& elapsed) {
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
+	sf::Vector2u size = GAME.getRenderWindow().getSize();
 	if (pos.x > GAME.getRenderWindow().getSize().x)
 	{
 		makeDead();
+		float meteorX = (float)(size.x + 100);
+
+		// Spawn the meteor somewhere along the height of window, randomly.
+		float meteorY = (float)(rand() % size.y);
+
+		// Create a meteor and add it to the scene
+		MeteorPtr meteor = std::make_shared<Meteor>(sf::Vector2f(meteorX, meteorY));
+		GAME.getCurrentScene().addGameObject(meteor);
 	}
 	else
 	{
