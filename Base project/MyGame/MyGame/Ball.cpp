@@ -17,10 +17,10 @@ void Ball::update(sf::Time& elapsed) {
 	int msElapsed = elapsed.asMilliseconds();
 	sf::Vector2f pos = sprite_.getPosition();
 	sf::Vector2u size = GAME.getRenderWindow().getSize();
-	if (pos.x > GAME.getRenderWindow().getSize().x)
+	if (pos.x > GAME.getRenderWindow().getSize().x - 100)
 	{
-		makeDead();
-		float meteorX = (float)(size.x + 100);
+		//makeDead();
+		float meteorX = (float)(size.x - 100);
 
 		// Spawn the meteor somewhere along the height of window, randomly.
 		float meteorY = (float)(rand() % size.y);
